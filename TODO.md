@@ -1,3 +1,10 @@
 - add function for pbcopy (or a hook for regular yanking that also pbcopy-s)
 - set up m4xe
 - set up org mode
+- Store auto-save (~) files in a root directory instead of alongside files
+- Write command to surround word with parens
+- Theme Emacs around wallpaper (https://alpha.wallhaven.cc/wallpaper/760704)
+- Write command to run current test in new buffer
+- Make newline-above work at beginning of file
+- Search at point solution (https://www.emacswiki.org/emacs/SearchAtPoint)
+- Write command to run current TS file in new buffer
