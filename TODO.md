@@ -1,0 +1,3 @@
+- add function for pbcopy (or a hook for regular yanking that also pbcopy-s)
+- set up m4xe
+- set up org mode

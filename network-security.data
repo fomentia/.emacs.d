@@ -1,0 +1,4 @@
+(
+ (:id "sha1:46027a16cbb35a9491e2abe30c3ef835c3ad1fb3" :fingerprint "sha1:88:42:24:4d:89:a3:de:8f:e5:c5:9f:4d:c1:00:63:a9:54:67:01:5e" :host "play.golang.org:443" :conditions (:insecure :unknown-ca :invalid))
+ (:id "sha1:706608f9b7fcfdea563351d49047f296d74a5a76" :fingerprint "sha1:e5:36:a4:d2:2a:16:bb:51:3c:1b:71:25:a6:b7:e0:fb:08:64:cd:d2")
+)
