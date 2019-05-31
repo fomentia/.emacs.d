@@ -40,6 +40,8 @@
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
 
 (add-hook 'js2-mode-hook #'setup-tide-mode)
+(add-hook 'js2-mode-hook #'add-node-modules-path)
+(add-hook 'js2-mode-hook #'prettier-js-mode)
 
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
@@ -280,7 +282,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
+    ("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" "715fdcd387af7e963abca6765bd7c2b37e76154e65401cd8d86104f22dd88404" default)))
  '(fill-column 80)
  '(js-indent-level 2)
  '(js2-bounce-indent-p nil)
@@ -290,7 +292,7 @@
  '(neo-window-width 40)
  '(package-selected-packages
    (quote
-    (terraform-mode use-package git-gutter-fringe+ git-gutter+ js2-mode company tide graphql-mode org-bullets coffee-mode go-rename yaml-mode smartparens dash-at-point slim-mode git-gutter haml-mode auto-complete flycheck gotest go-mode swift3-mode robe csharp-mode swift-mode helm-projectile ag alchemist helm-ag linum-relative helm markdown-preview-mode kotlin-mode fzf neotree projectile slime focus elixir-mode web-mode exec-path-from-shell magit slack websocket markdown-mode impatient-mode hamburg-theme define-word)))
+    (add-node-modules-path prettier-js monokai-theme terraform-mode use-package git-gutter-fringe+ git-gutter+ js2-mode company tide graphql-mode org-bullets coffee-mode go-rename yaml-mode smartparens dash-at-point slim-mode git-gutter haml-mode auto-complete flycheck gotest go-mode swift3-mode robe csharp-mode swift-mode helm-projectile ag alchemist helm-ag linum-relative helm markdown-preview-mode kotlin-mode fzf neotree projectile slime focus elixir-mode web-mode exec-path-from-shell magit slack websocket markdown-mode impatient-mode hamburg-theme define-word)))
  '(projectile-mode t nil (projectile))
  '(scroll-bar-mode nil)
  '(scroll-preserve-screen-position 1)
