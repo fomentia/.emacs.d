@@ -23,7 +23,9 @@
   ;; company is an optional dependency. You have to
   ;; install it separately via package-install
   ;; `M-x package-install [ret] company`
-  (company-mode +1))
+  (company-mode +1)
+  (add-node-modules-path)
+  (prettier-js-mode))
 
 (require 'flycheck)
 (require 'web-mode)
@@ -40,6 +42,8 @@
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
 
 (add-hook 'js2-mode-hook #'setup-tide-mode)
+(add-hook 'js2-mode-hook #'add-node-modules-path)
+(add-hook 'js2-mode-hook #'prettier-js-mode)
 
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
@@ -290,7 +294,7 @@
  '(neo-window-width 40)
  '(package-selected-packages
    (quote
-    (monokai-theme terraform-mode use-package git-gutter-fringe+ git-gutter+ js2-mode company tide graphql-mode org-bullets coffee-mode go-rename yaml-mode smartparens dash-at-point slim-mode git-gutter haml-mode flycheck gotest go-mode swift3-mode robe csharp-mode swift-mode helm-projectile ag alchemist helm-ag linum-relative helm markdown-preview-mode kotlin-mode fzf neotree projectile slime focus elixir-mode web-mode exec-path-from-shell magit slack websocket markdown-mode impatient-mode hamburg-theme define-word)))
+    (add-node-modules-path prettier-js monokai-theme terraform-mode use-package git-gutter-fringe+ git-gutter+ js2-mode company tide graphql-mode org-bullets coffee-mode go-rename yaml-mode smartparens dash-at-point slim-mode git-gutter haml-mode auto-complete flycheck gotest go-mode swift3-mode robe csharp-mode swift-mode helm-projectile ag alchemist helm-ag linum-relative helm markdown-preview-mode kotlin-mode fzf neotree projectile slime focus elixir-mode web-mode exec-path-from-shell magit slack websocket markdown-mode impatient-mode hamburg-theme define-word)))
  '(projectile-mode t nil (projectile))
  '(scroll-bar-mode nil)
  '(scroll-preserve-screen-position 1)
