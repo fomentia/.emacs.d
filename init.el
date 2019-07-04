@@ -4,7 +4,7 @@
 
 (require 'use-package)
 
-(add-to-list 'load-path "/Users/isaac/.emacs.d/packages/")
+(add-to-list 'load-path "/home/isaac/.emacs.d/packages/")
 (require 'go-autocomplete)
 (require 'zen-mode)
 
