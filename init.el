@@ -21,6 +21,11 @@
 (require 'zen-mode)
 (require 'goto-chg)
 
+(require 'bgex)
+
+(when (boundp 'bgex-exist-p)
+  (bgex-set-image-default "~/.emacs.d/images/japanese-complex-de-shine.jpg"))
+
 (global-undo-tree-mode)
 
 (add-to-list 'load-path "~/.emacs.d/evil")
