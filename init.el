@@ -264,8 +264,6 @@
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
 
-(transparency 97)
-
 (defun move-line-up ()
   "Move up the current line."
   (interactive)
